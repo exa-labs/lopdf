@@ -27,6 +27,9 @@ use crate::parser;
 use crate::xref::{Xref, XrefEntry, XrefRecovery, XrefType, decode_xref_stream_with_limit};
 use crate::{Dictionary, Document, Error, IncrementalDocument, Object, ObjectId, Result};
 
+mod lazy;
+pub use lazy::LazyDocument;
+
 /// Open `path` and report its size, so the caller can pre-size the buffer it
 /// reads the file into.
 #[cfg(not(feature = "async"))]

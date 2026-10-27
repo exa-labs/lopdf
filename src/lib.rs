@@ -50,7 +50,7 @@ pub use incremental_document::IncrementalDocument;
 pub use load_options::{FilterFunc, LoadOptions};
 pub use object_stream::{ObjectStream, ObjectStreamBuilder, ObjectStreamConfig};
 pub use outlines::Outline;
-pub use reader::{PdfMetadata, Reader};
+pub use reader::{LazyDocument, PdfMetadata, Reader};
 pub use save_options::{SaveOptions, SaveOptionsBuilder};
 pub use toc::{Toc, TocType};
 
